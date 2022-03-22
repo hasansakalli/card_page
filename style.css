@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+    font-family: 'Raleway', sans-serif;
+  
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-img {
+    background-image: url("https://www.bestplace-immobilien.de/wp-content/uploads/2022/03/20220307_BG0473_Friedenauer_Hoehe_Ext04_Final-1-1024x724.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 60%;
+    position: relative;
+    display: grid;
+    
+  }
+  
+  .card-img::before {
+    background: none;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  .container:hover .card-img::before{
+    background: rgba(16, 42, 63, 0.712);
+    transition: all 100ms;
+    z-index: 2;
+  }
+  
+  .logo {
+    
+    width: 250px;
+    align-items: stretch;
+   
+  }
+  .portfolio-logo {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    transition: all 100ms;
+    opacity: 0;
+    z-index: 9;
+    height: 60%;
+    margin-top: 3em;
+    cursor: pointer;
+    
+  }
+  
+  
+  
+  .img-wrapper {
+    display: flex;
+  }
+  .row1 {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+    gap: 0.5em;
+  }
+  .row2 {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .kap-icon {
+    background-color: #062a3f;
+    padding: 5px;
+  }
+  .eig-icon {
+    background-color: #007bff;
+    padding: 5px;
+  }
+  .neubau {
+    background-color: #062a3f;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+  }
+  .arrow-icon {
+   opacity: 0;
+    font-size: 20px;
+    background-color: #fff;
+    line-height: 1;
+    margin: auto;
+    font-weight: 900;
+    position: relative;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding-top: 15px;
+    padding-left: 18px;
+     transition: all 300ms;
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  
+  
+  .container:hover .arrow-icon {
+    opacity:1;
+    position:relative;
+    transition: all 300ms;
+  }
+  
+  .container:hover .portfolio-logo {
+    opacity: 1;
+    transform: translateY(50%);
+    transition: cubic-bezier(0.47, 0.39, 0.29, 1.09) 900ms;
+  }
+
+  /***************card-text*********/
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3em 2em;
+    width: 50%;
+    position: relative;
+    bottom: 0;
+    background: #fff;
+  }
+  
+  .portfolio_title {
+    text-decoration: none;
+    font-size: 2em;
+    color: #0f283c;
+  }
+  
+  .place_details {
+    opacity: 0.7;
+    font-size: 0.9em;
+    min-height: 25px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .place_details i {
+    font-size: 0.9em;
+    
+  }
+  
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .bottom_text {
+    font-size: 1em;
+  }
+  
+  .bottom_nummer {
+    font-size: 1em;
+  }
+  

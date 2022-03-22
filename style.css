@@ -15,8 +15,8 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     align-items: center;
     cursor: pointer;
 }
@@ -51,7 +51,7 @@ body{
   
   .logo {
     
-    width: 250px;
+    width: 200px;
     align-items: stretch;
    
   }
